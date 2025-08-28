@@ -1,0 +1,56 @@
+/* Education Section */
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    color: white;
+  }
+  
+  /* Left Side: Image */
+  .education-img img {
+    width: 350px; /* Adjust size */
+    height: auto;
+    border-radius: 20px; /* Rounded corners */
+  }
+  
+  /* Right Side: Education Info */
+  .education-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual Education Blocks */
+  .edu-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+    border: 0.2px white solid;
+
+  }
+  
+  .edu-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .education {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .education-img img {
+      width: 250px;
+    }
+  
+    .education-info {
+      width: 100%;
+    }
+  }
+  

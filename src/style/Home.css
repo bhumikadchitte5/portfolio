@@ -1,0 +1,97 @@
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Main Text Styling */
+.home h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    color: #ff4081;
+}
+
+
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ff4081;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color: white;
+}
+
+.contact-btn {
+    background: purple;
+}
+
+.cv-btn {
+    background: red;
+}
+.cv-btn a{
+    text-decoration: none;
+    color: white;
+}
+.contact-btn a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 28px;
+    }
+
+   
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+}

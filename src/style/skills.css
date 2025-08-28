@@ -1,0 +1,107 @@
+/* Skills Section */
+.skills-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Skill Categories */
+.skills-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(128, 0, 128, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-card.active {
+  background: purple;
+  color: white;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Skills Details */
+.skills-details {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.skills-details h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Progress Bars */
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  height: 8px;
+  position: relative;
+}
+
+.progress-fill {
+  background: purple;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* ✅ Mobile View Adjustments */
+@media (max-width: 768px) {
+  .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Wrap after 2 categories */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .skill-card {
+    min-width: 100px;
+    padding: 10px;
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Smaller icons */
+  }
+
+  .skills-details {
+    padding: 15px;
+    text-align: center;
+  }
+}
